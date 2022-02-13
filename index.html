@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Northroad</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+
+    <style>
+      #carouselBasicExample,
+      .carousel-inner,
+      .carousel-item,
+      .carousel-item-active {
+        height: 100vh; 
+      }
+
+      .carousel-item:nth-child(1) {
+        background-image: url('https://mdbootstrap.com/img/Photos/Others/images/90.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+
+      .carousel-inner:nth-child(2) {
+        background-image: url('https://mdbootstrap.com/img/Photos/Others/images/91.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+
+      .carousel-item.active:nth-child(3) {
+        background-image: url('https://mdbootstrap.com/img/Photos/Others/images/102.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+
+      #carouselBasicExample {
+        margin-top: -66.6px;
+      }
+
+      .navbar {
+        z-index: 100;
+      }
+    </style>
+  </head>
+  <body>
+  
+    <header class="mb-5">
+      <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+      <!-- Container wrapper -->
+  <div class="container">
+      <!-- Toggle button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Navbar brand -->
+      <a class="navbar-brand mt-2 mt-lg-0" href="#">
+        <i class="fab fa-mdb fa-2x"></i>
+      </a>
+      <!-- Left links -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+        <a class="nav-link text-white" href="file:///C:/Users/İrfan%20ÇITAK/OneDrive/Masaüstü/Bootstrap%205%20Responsive%20web%20desing index.html">Anasayfa</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link text-white" href="https://www.nasa.gov/">Blog - NASA</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link text-white" href="#">Uzay günlükleri</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link text-white" href="#">Ülke günlükleri</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link text-white" href="#">Gezi günlükleri</a>
+        </li>
+      </ul>
+      <!-- Left links -->
+    </div>
+    <!-- Collapsible wrapper -->
+
+    <!-- Right elements -->
+    <div class="d-flex align-items-center">
+      <!-- Icon -->
+      <a class="text-white me-3" href="#">
+        <i class="fas fa-shopping-cart"></i>
+      </a>
+
+      <!-- Notifications -->
+      <div class="dropdown">
+        <a
+          class="text-white me-3 dropdown-toggle hidden-arrow"
+          href="#"
+          id="navbarDropdownMenuLink"
+          role="button"
+          data-mdb-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <i class="fas fa-bell"></i>
+          <span class="badge rounded-pill badge-notification bg-danger">1</span>
+        </a>
+        <ul
+          class="dropdown-menu dropdown-menu-end"
+          aria-labelledby="navbarDropdownMenuLink"
+        >
+          <li>
+            <a class="dropdown-item" href="#">2022 yenilikleri</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Teknoloji gelişmeleri</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Silikon vadisi haberleri</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Avatar -->
+      <div class="dropdown">
+        <a
+          class="dropdown-toggle d-flex align-items-center hidden-arrow"
+          href="#"
+          id="navbarDropdownMenuAvatar"
+          role="button"
+          data-mdb-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <img
+            src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+            class="rounded-circle"
+            height="25"
+            alt="Black and White Portrait of a Man"
+            loading="lazy"
+          />
+        </a>
+        <ul
+          class="dropdown-menu dropdown-menu-end"
+          aria-labelledby="navbarDropdownMenuAvatar"
+        >
+          <li>
+            <a class="dropdown-item" href="#">Benim profilim</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Ayarlar</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Çıkış yap</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Right elements -->
+  </div>
+  <!-- Container wrapper -->
+</nav>
+      <!-- Navbar -->
+
+
+  <!-- Carousel wrapper -->
+<div 
+id="carouselBasicExample" 
+class="carousel slide carousel-fade shadow-5-strong" 
+data-mdb-ride="carousel">
+
+  <!-- Indicators -->
+  <div class="carousel-indicators">
+    <button
+      type="button"
+      data-mdb-target="#carouselBasicExample"
+      data-mdb-slide-to="0"
+      class="active"
+      aria-current="true"
+      aria-label="Slide 1"
+    ></button>
+    <button
+      type="button"
+      data-mdb-target="#carouselBasicExample"
+      data-mdb-slide-to="1"
+      aria-label="Slide 2"
+    ></button>
+    <button
+      type="button"
+      data-mdb-target="#carouselBasicExample"
+      data-mdb-slide-to="2"
+      aria-label="Slide 3"
+    ></button>
+  </div>
+  <!-- Inner -->
+  <div class="carousel-inner">
+    <!-- Single item -->
+    <div class="carousel-item active">
+    <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.6)">
+      <div 
+      class="d-flex justify-content-center 
+      align-items-center h-100"
+      >
+        <div class="text-center text-white">
+          <h1 class="mb-4">Shanghai</h1>
+          <h2 class="mb-4">In 2022</h2>
+          <button type="button" class="btn btn-outline-light btn-lg" data-mdb-ripple-color="light">Tıkla</button>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- Single item -->
+    <div class="carousel-item">
+      <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.6)">
+        <div 
+        class="d-flex justify-content-center 
+        align-items-center h-100"
+        >
+          <div class="text-center text-white">
+            <h1 class="mb-4">Londra</h1>
+            <h2 class="mb-4">In 2022</h2>
+            <button type="button" class="btn btn-outline-light btn-lg" data-mdb-ripple-color="light">Click here</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Single item -->
+    <div class="carousel-item">
+      <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.6)">
+        <div 
+        class="d-flex justify-content-center 
+        align-items-center h-100"
+        >
+          <div class="text-center text-white">
+            <h1 class="mb-4">İreland</h1>
+            <h2 class="mb-4">In 2022</h2>
+            <button type="button" class="btn btn-outline-light btn-lg" data-mdb-ripple-color="light">Click here</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Inner -->
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- Carousel wrapper -->
+    </header>
+
+
+    <main class="mb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 mb-4">      
+            <div
+  class="bg-image hover-overlay ripple shadow-1-strong rounded-5"
+  data-mdb-ripple-color="light">
+  <img 
+  src="https://mdbcdn.b-cdn.net/img/new/fluid/city/115.webp" 
+  class="w-100" 
+  alt="Louvre"
+  />
+  <a href="#!">
+    <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)">
+    </div>
+  </a>
+      </div>
+        </div>
+          <div class="col-md-5">
+            <h3>Toronto</h3>
+              <p>Kanada'nın en büyük şehri Toronto, yüksek yaşam standardına, düşük suç oranına sahip; temiz, modern ve çok kültürlü yapısıyla gezmeniz gereken şehirlerdendir. Ontario eyaletinin başkentidir ve bu eyalet Kanada'nın İngilizce konuşulan eyaletlerindendir. Ancak şehrin yerlileri Fransızca da bilmektedir.</p>
+              <p>
+              <h3>Toronto pahalı mı?</h3>
+              Toronto'da ki bir evin ortalama fiyatı 490.000 dolar civarındadır ve Toronto Kanada'da yaşamak için en pahalı ikinci şehirdir. Toronto aynı zamanda ülkenin en büyük şehridir ve çok fazla kültürlere maruz kalmasıyla bilinir.
+              </p>
+              <h3>Toronto en soğuk kaç derece</h3>
+              <p>Soğuk mevsim 3,4 ay uzunluğundadır ve 3 Aralık tarihinde başlayıp 16 Mart tarihine kadar sürer, günlük ortalama yüksek sıcaklık 4°C altındadır. Toronto bölgesindeki en soğuk ay Ocak ayıdır; bu ayda ortalama düşük sıcaklık -8°C iken yüksek sıcaklık -1°C düzeyindedir.
+              </p>
+          </div>
+        </div>
+
+        <hr class="my-5">
+
+        <h4 class="mb-5 text-center">Galaxsy lokasyonları</h4>
+
+    <div class="row gx-lg-5 text-center">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+            <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/103.webp" class="img-fluid"/>
+            <a href="#!">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+            </a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Space</h5>
+            <p class="card-text">Uzay veya feza, Dünya'nın ötesinde ve gök cisimleri arasında var olan, sonsuz olduğu düşünülen fakat sonsuz olduğu konusunda kesin yargılara varılamayan genişliktir.</p>
+            <a href="#!" class="btn btn-primary">Button</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-4">
+
+        <div class="card">
+          <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+            <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/113.webp" class="img-fluid"/>
+            <a href="#!">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+            </a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Earth-15</h5>
+            <p class="card-text">Dünya'dan yaklaşık 500 ışık yılı uzaklıkta bulunan kırmızı cüce yıldız Earth-15 yörüngesindeki bir ötegezegendir. Earth-15, başka bir yıldızın yaşama elverişli bölgesinde keşfedilen, Dünya ile benzer yarıçapa sahip ilk gezegendir.</p>
+            <a href="#!" class="btn btn-primary">Button</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-4">
+
+        <div class="card">
+          <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+            <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/152.webp" class="img-fluid"/>
+            <a href="#!">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+            </a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Nebula</h5>
+            <p class="card-text">Tüm yıldızların doğum yeri olan bulutsular (nebula), galaksilerin temel bileşenlerindendir. Bir Nebula oluşmadan önce bir yıldızdır.</p>
+            <a href="#!" class="btn btn-primary">Button</a>
+          </div>
+        </div>
+
+      </div>
+        </div>
+        <hr class="my-5">
+
+
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <h4 class="mb-5 text-center">Bize ulaşın</h4>
+
+
+            <form>
+              <!-- Name input -->
+              <div class="form-outline mb-4">
+                <input type="text" id="form4Example1" class="form-control" />
+                <label class="form-label" for="form4Example1">İsim</label>
+              </div>
+            
+              <!-- Email input -->
+              <div class="form-outline mb-4">
+                <input type="email" id="form4Example2" class="form-control" />
+                <label class="form-label" for="form4Example2">Email Adresi</label>
+              </div>
+            
+              <!-- Message input -->
+              <div class="form-outline mb-4">
+                <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+                <label class="form-label" for="form4Example3">İletmek istediğiniz mesaj</label>
+              </div>
+            
+              <!-- Checkbox -->
+              <div class="form-check d-flex justify-content-center mb-4">
+                <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4" checked />
+                <label class="form-check-label" for="form4Example4">
+                  Bana bu mesajın bir kopyasını gönder
+                </label>
+              </div>
+            
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-primary btn-block mb-4">Gönder</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+
+      <!-- Footer -->
+<footer class="bg-light text-center ">
+  <!-- Grid container -->
+  <div class="container p-4">
+
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+
+      <!-- Twitter -->
+      <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+
+      <!-- Google -->
+      <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i class="fab fa-google"></i></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+      <!-- Github -->
+      <a class="btn btn-primary btn-floating m-1" style="background-color: #333333" href="#!" role="button"><i class="fab fa-github"></i></a>
+    </section>
+    <!-- Section: Social media -->
+
+
+
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+        
+      </p>
+    </section>
+    <!-- Section: Text -->
+
+
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Hakkımızda</h5>
+
+          <ul class="list-unstyled mb-0">
+          
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Hukuka aykırılık</h5>
+
+          <ul class="list-unstyled mb-0">
+        
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Gizlilik</h5>
+
+          <ul class="list-unstyled mb-0">
+      
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Künye</h5>
+
+          <ul class="list-unstyled mb-0">
+    
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    © 2022 Tüm hakları saklıdır
+    <a class="text-dark" href="https://mdbootstrap.com/"></a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+    </footer>
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+  </body>
+</html>
